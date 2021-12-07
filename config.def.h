@@ -108,7 +108,7 @@ static const char *colorname[] = {
     [5] = "#b16286", /* magenta */
     [6] = "#689d6a", /* cyan    */
     [7] = "#a89984", /* white   */
-    
+
     /* 8 bright colors */
     [8]  = "#928374", /* black   */
     [9]  = "#fb4934", /* red     */
@@ -120,6 +120,36 @@ static const char *colorname[] = {
     [15] = "#ebdbb2", /* white   */
 
     [16] = "#000000", /* black bg */
+float alpha = 0.8;
+
+/* Terminal colors (16 first used in escape sequence) */
+static const char *colorname[] = {
+	/* 8 normal colors */
+	"black",
+	"red3",
+	"green3",
+	"yellow3",
+	"blue2",
+	"magenta3",
+	"cyan3",
+	"gray90",
+
+	/* 8 bright colors */
+	"gray50",
+	"red",
+	"green",
+	"yellow",
+	"#5c5cff",
+	"magenta",
+	"cyan",
+	"white",
+
+	[255] = 0,
+
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#cccccc",
+	"#555555",
+	"black",
 };
 
 
