@@ -24,7 +24,7 @@ static HbFontMatch *hbfontcache = NULL;
  * Replace 0 with a list of font features, wrapped in FEATURE macro, e.g.
  * FEATURE('c', 'a', 'l', 't'), FEATURE('d', 'l', 'i', 'g')
  */
-hb_feature_t features[] = { 0 };
+hb_feature_t features[] = { FEATURE('c', 'a', 'l', 't') };
 
 void
 hbunloadfonts()
